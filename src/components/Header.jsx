@@ -2,15 +2,22 @@ import userIcon from "../Images/user-3-line.svg";
 import heartIcon from "../Images/heart-3-line.svg";
 import cartIcon from "../Images/shopping-cart-line.svg";
 import searchIcon from "../Images/search-line.svg";
+import "../css/header.css";
 
 function Header() {
   return (
     <div className="container">
       <header>
         <ul>
-          <li>Latest</li>
-          <li>Collection</li>
-          <li>About</li>
+          <a>
+            <li>Latest</li>
+          </a>
+          <a>
+            <li>Collection</li>
+          </a>
+          <a>
+            <li>About</li>
+          </a>
         </ul>
 
         <h2>SomeShopping</h2>
