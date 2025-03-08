@@ -5,5 +5,78 @@
 
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; 
+    align-items: center; 
+    border-bottom: 2px solid red; 
+    padding: 15px 20px; 
+    width: 96%; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background-color: white; 
+    z-index: 1000; 
+}
+
+nav {
+    flex: 1; 
+    display: flex;
+    justify-content: start; 
+}
+
+header ul {
+    display: flex;
+    gap: 20px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the title */
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.search-bar{
+    position: relative; 
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+.search-bar img{
+    position: absolute;
+    right: 10px; /* Position the icon inside the input */
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+.search-input {
+    width: 100%;
+    padding: 5px 15px 5px 5px; 
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 10px;
+}
+.icons-header {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    cursor: pointer; 
 }

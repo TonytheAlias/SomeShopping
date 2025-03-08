@@ -8,28 +8,39 @@ function Header() {
   return (
     <div className="container">
       <header>
-        <ul>
-          <a>
-            <li>Latest</li>
-          </a>
-          <a>
-            <li>Collection</li>
-          </a>
-          <a>
-            <li>About</li>
-          </a>
-        </ul>
+        <nav>
+          <ul>
+            <a>
+              <li>Latest</li>
+            </a>
+            <a>
+              <li>Collection</li>
+            </a>
+            <a>
+              <li>About</li>
+            </a>
+          </ul>
+        </nav>
 
-        <h2>SomeShopping</h2>
+        <h2 className="title">SomeShopping</h2>
+
         <div className="right-header">
-          <div className="Search-bar">
-            <input type="text" placeholder="Search..." />
+          <div className="search-bar">
+            <input
+              type="text"
+              placeholder="Search..."
+              className="search-input"
+            />
             <img src={searchIcon} alt="search icon" />
           </div>
-          <div className="icons-header"></div>
-          <img src={userIcon} alt="User icon" />
-          <img src={heartIcon} alt="heart icon" />
-          <img src={cartIcon} alt="Shopping cart icon" />
+
+          <img className="icons-header" src={userIcon} alt="User icon" />
+          <img className="icons-header" src={heartIcon} alt="heart icon" />
+          <img
+            className="icons-header"
+            src={cartIcon}
+            alt="Shopping cart icon"
+          />
         </div>
       </header>
     </div>
