@@ -31,16 +31,12 @@ function Header() {
               placeholder="Search..."
               className="search-input"
             />
-            <img src={searchIcon} alt="search icon" />
+            <i className="ri-search-line"></i>
           </div>
 
-          <img className="icons-header" src={userIcon} alt="User icon" />
-          <img className="icons-header" src={heartIcon} alt="heart icon" />
-          <img
-            className="icons-header"
-            src={cartIcon}
-            alt="Shopping cart icon"
-          />
+          <i id="icon-header" className="ri-user-3-line"></i>
+          <i id="icon-header" className="ri-heart-3-line"></i>
+          <i id="icon-header" className="ri-shopping-cart-line"></i>
         </div>
       </header>
     </div>

@@ -58,9 +58,9 @@ header ul li a {
     align-items: center;
     width: 150px;
 }
-.search-bar img{
+.search-bar i{
     position: absolute;
-    right: 10px; /* Position the icon inside the input */
+    right: 10px; 
     width: 20px;
     height: 20px;
     cursor: pointer;
@@ -74,9 +74,10 @@ header ul li a {
     outline: none;
     font-size: 10px;
 }
-.icons-header {
+#icon-header {
     width: 25px;
     height: 25px;
     object-fit: contain;
-    cursor: pointer; 
+    cursor: pointer;
+    color: black;
 }
