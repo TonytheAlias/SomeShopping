@@ -1,7 +1,3 @@
-import userIcon from "../Images/user-3-line.svg";
-import heartIcon from "../Images/heart-3-line.svg";
-import cartIcon from "../Images/shopping-cart-line.svg";
-import searchIcon from "../Images/search-line.svg";
 import "../css/header.css";
 
 function Header() {
