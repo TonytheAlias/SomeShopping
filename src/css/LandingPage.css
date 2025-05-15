@@ -1,28 +1,31 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-header {
-    display:flex;
-    align-items: start;
-    width: 100%; 
-    height: 400px; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-image: url('../Images/Background-Header.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-right: 50px;
-    overflow: hidden;
-    z-index: 1;
+
+.container {
+    width: 100%;
+    max-width: 100%;
 }
+.header-wrapper {
+    position: relative;
+    width: 100%;
+}
+  
+.header-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 .find-fit {
     position: absolute;
     color: white;
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(40px); 
-    -webkit-backdrop-filter: blur(40px);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px); 
+    -webkit-backdrop-filter: blur(20px);
     padding: 20px;
     border-radius: 10px;
     top: 49%; 
@@ -30,7 +33,6 @@ header {
     transform: translateY(-50%);
     text-align: center;
     max-width: 220px;
-    z-index: 10;
 }
 
 .find-fit button{
@@ -41,4 +43,24 @@ header {
     background: linear-gradient(180deg, #148AA1, #07333B);
     color: white;
     cursor: pointer; 
+}
+section {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    width: 100%;
+    border: red solid 4px;
+    padding: 20px;
+    z-index: 2;
+}
+
+.clothes {
+    flex: 1;
+    min-width: 250px; 
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    margin: 10px;
 }
