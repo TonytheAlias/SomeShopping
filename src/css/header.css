@@ -37,6 +37,7 @@ header ul li{
     color: white;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
     cursor: pointer;
+    transition: 0.3s;
 }
 header ul li:hover{
     color: #1CDBFD;
@@ -98,6 +99,7 @@ header ul li:hover{
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
     cursor: pointer;
     color: white;
+    transition: 0.3s;
 }
 #icon-header:hover{
     color: #1CDBFD;
