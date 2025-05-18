@@ -32,7 +32,8 @@
     left: 3%; 
     transform: translateY(-50%);
     text-align: center;
-    max-width: 220px;
+    max-width: 15rem;
+    height: 12rem;
 }
 
 .find-fit button{
@@ -44,23 +45,69 @@
     color: white;
     cursor: pointer; 
 }
+
 section {
     display: flex;
     justify-content: space-around; 
     flex-wrap: wrap; 
     width: 100%;
-    border: red solid 4px;
-    padding: 20px;
+    padding: 20px 70px;
     z-index: 2;
+    background-color: #148AA1;
 }
 
 .clothes {
     flex: 1;
-    min-width: 250px; 
-    height: 300px;
+    max-width: 250px; 
+    height: 375px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lightgray;
     margin: 10px;
+    cursor: pointer;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    transition: transform 0.5 ease;
+}
+
+.clothes:hover{
+ transform: scale(1.1)
+}
+
+.womens{
+    background-image: url('../Images/women-pose.png');
+    background-position: center;
+}
+
+.mens{
+    background-image: url('../Images/Man-pose.png');
+    background-position: center;
+}
+
+.kids{
+    background-image: url('../Images/child-pose.png');
+    background-position: center;
+}
+
+@media (max-width: 768px){
+   .section {
+    padding: 20px 10px;
+    }
+    .clothes {
+    max-width: 150px; 
+    height: 200px;
+  
+    }
+    .clothes:hover{
+     transform: scale(1.2)
+    }
+    .womens{
+        background-size: cover;
+    }
+    .mens{
+        background-size: cover;
+    }
+    .kids{
+        background-size: cover;
+    }
+
 }

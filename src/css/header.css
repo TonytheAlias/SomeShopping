@@ -12,7 +12,6 @@ header{
     position: relative;
     background-color: #148AA1;
     box-sizing: border-box;
-    z-index: 1000; 
 }
 
 nav {
@@ -60,7 +59,7 @@ header ul li:hover{
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     flex-wrap: wrap;
     max-width: 100%;
     overflow-x: hidden;
