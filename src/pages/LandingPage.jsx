@@ -17,15 +17,25 @@ function LandingPage() {
           <button>Shop Now</button>
         </div>
       </div>
+
       <section>
-        <div className="clothes womens">
-          <h2>Womens</h2>
+        <div className="section-title">
+          <h2>New Collections</h2>
+          <p>
+            Search through our collection to <strong>Find Your Fit </strong>for
+            youself or the whole family
+          </p>
         </div>
-        <div className="clothes mens">
-          <h2>Mens</h2>
-        </div>
-        <div className="clothes kids">
-          <h2>Kids</h2>
+        <div className="categories">
+          <div className="clothes womens">
+            <h2>Womens</h2>
+          </div>
+          <div className="clothes mens">
+            <h2>Mens</h2>
+          </div>
+          <div className="clothes kids">
+            <h2>Kids</h2>
+          </div>
         </div>
       </section>
     </div>
