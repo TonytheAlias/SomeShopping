@@ -1,6 +1,7 @@
 import "../css/header.css";
 import { useState } from "react";
-
+import Search from "../Images/search-white.svg";
+import HamburgerIcon from "../Images/hambugerPixel.svg";
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -31,10 +32,12 @@ function Header() {
               className="search-input desktop-search"
             />
           </div>
-          <i
-            className="ri-search-line search-toggle"
+          <img
+            src={Search}
+            alt="Search"
+            className="search-toggle"
             onClick={() => setSearchOpen(!searchOpen)}
-          ></i>
+          />
           <div className={searchOpen ? "mobile-search open" : "mobile-search"}>
             <input
               type="text"
@@ -65,10 +68,12 @@ function Header() {
           </div>
         </div>
 
-        <i
-          className="ri-align-justify menu-toggle"
+        <img
+          src={HamburgerIcon}
+          alt="Menu"
+          className="menu-toggle"
           onClick={() => setMenuOpen(!menuOpen)}
-        ></i>
+        />
       </header>
     </div>
   );
