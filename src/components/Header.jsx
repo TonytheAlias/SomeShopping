@@ -2,6 +2,9 @@ import "../css/header.css";
 import { useState } from "react";
 import Search from "../Images/search-white.svg";
 import HamburgerIcon from "../Images/hambugerPixel.svg";
+import ChestIcon from "../Images/Chest-pixel.svg";
+import Profile from "../Images/profile.svg";
+import Favorite from "../Images/RedPixelHeart-fill.svg";
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -48,19 +51,19 @@ function Header() {
 
           <div className={menuOpen ? "nav-menu open" : "nav-menu"}>
             <div className="menu-item">
-              <i className="ri-user-3-line icon"></i>
+              <img src={Profile} className="icon" />
               <span className="icon-label">
                 <strong>Profile</strong>
               </span>
             </div>
             <div className="menu-item">
-              <i className="ri-heart-3-line icon"></i>
+              <img src={Favorite} className="icon" />
               <span className="icon-label">
                 <strong>Favorites</strong>
               </span>
             </div>
             <div className="menu-item">
-              <i className="ri-shopping-cart-line icon"></i>
+              <img src={ChestIcon} className="icon" />
               <span className="icon-label">
                 <strong>Cart</strong>
               </span>

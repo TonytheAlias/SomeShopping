@@ -3,7 +3,22 @@
     margin: 0;
     padding: 0;
 }
-
+@font-face {
+  font-family: depixel;
+  src: url(/src/Fonts/DePixelBreit.ttf);
+}
+@font-face {
+  font-family: depixel-bold;
+  src: url(/src/Fonts/DePixelHalbfett.ttf);
+}
+@font-face{
+  font-family: depixel-big;
+  src: url(/src/Fonts/DePixelBreitFett.ttf);
+}
+@font-face {
+  font-family: pixellari;
+  src: url(/src/Fonts/Pixellari.ttf);
+}
 .container {
     width: 100%;
     max-width: 100%;

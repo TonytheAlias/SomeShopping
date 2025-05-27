@@ -126,19 +126,19 @@ header ul li:hover{
     width: 22px;
     cursor: pointer;
     position: absolute;
-    left: 86%;
+    left: 83%;
   }
 
 
 .icon{
-    font-size: 20px;
+    width: 30px;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
     cursor: pointer;
-    color: white;
     transition: 0.3s;
 }
 .icon:hover{
-    color: #1CDBFD;
+   background-color: white;
+   border-radius: 50%;
 }
 
 .nav-menu {
@@ -162,6 +162,10 @@ header ul li:hover{
 }
 .icon-label{
     display: none;
+    font-family: pixellari;
+    font-size: 17px;
+    cursor: pointer;
+
 }
 
 @media (max-width: 768px){
@@ -187,9 +191,9 @@ header ul li:hover{
   .nav-menu {
   position: absolute;
   top: 60px;
-  left: 76%;
+  left: 74%;
   background-color: #148AA1;
-  width: 22%;
+  width: 24%;
   gap: 15px;
   padding: 20px;
   z-index: 999;
@@ -222,6 +226,10 @@ header ul li:hover{
     margin-right: -5px;
     margin-bottom: 3px;
   }
+  .icon:hover{
+    background-color: transparent;
+    border-radius: 0%;
+}
 
   header {
     flex-wrap: wrap;
@@ -246,6 +254,7 @@ header ul li:hover{
     cursor: pointer;
     margin-right: 10px;
     margin-top: 5px;
+    left: 86%;
   }
 
   .mobile-search {
