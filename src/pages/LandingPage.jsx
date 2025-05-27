@@ -10,7 +10,8 @@ function LandingPage() {
         <Header />
         <img src={headerImg} alt="Header Background" className="header-bg" />
         <div className="find-fit">
-          <h3>Find Your Fit</h3>
+          <h3>Choose Your Fit</h3>
+          <hr />
           <p>
             Search through our collection of clothing and put your best fit
             together for the best prices

@@ -129,16 +129,16 @@ header ul li:hover{
     left: 83%;
   }
 
-
 .icon{
     width: 30px;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    image-rendering: pixelated;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6));
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease;
+    border-radius: 20%;
 }
 .icon:hover{
-   background-color: white;
-   border-radius: 50%;
+  filter: drop-shadow(1px 1px 3px #1CDBFD);
 }
 
 .nav-menu {
@@ -147,7 +147,6 @@ header ul li:hover{
   gap: 15px;
   margin: 10px;
 }
-
 
 .menu-toggle {
   display: none;
@@ -165,6 +164,7 @@ header ul li:hover{
     font-family: pixellari;
     font-size: 17px;
     cursor: pointer;
+    transition: 0.3s;
 
 }
 
@@ -227,9 +227,11 @@ header ul li:hover{
     margin-bottom: 3px;
   }
   .icon:hover{
-    background-color: transparent;
-    border-radius: 0%;
-}
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6)); 
+  }
+  .icon-label:hover{
+    color: #1CDBFD;
+  }
 
   header {
     flex-wrap: wrap;
