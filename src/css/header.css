@@ -1,19 +1,3 @@
-@font-face {
-  font-family: depixel;
-  src: url(/src/Fonts/DePixelBreit.ttf);
-}
-@font-face {
-  font-family: depixel-bold;
-  src: url(/src/Fonts/DePixelHalbfett.ttf);
-}
-@font-face{
-  font-family: depixel-big;
-  src: url(/src/Fonts/DePixelBreitFett.ttf);
-}
-@font-face {
-  font-family: pixellari;
-  src: url(/src/Fonts/Pixellari.ttf);
-}
 .container{
     margin: 0px;
     padding: 0px;
@@ -46,26 +30,26 @@ header ul {
 
 header ul li a {
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
 }
 header ul li{
-  font-family: pixellari;
-  font-size: 20px;
-  color: white;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
-  cursor: pointer;
-  transition: 0.3s;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: 0.3s;
 }
 header ul li:hover{
     color: #1CDBFD;
 }
 
 .title {
-  font-family: depixel-bold;
     position: absolute;
-    left: 45%;
+    left: 50%;
     bottom: 30%;
     transform: translateX(-50%); 
     font-size: 1.8rem;
+    font-weight: bold;
     color: #1CDBFD;
     text-shadow: 
     3px 3px 5px rgba(0, 0, 0, 0.7);
@@ -123,22 +107,22 @@ header ul li:hover{
 
 .search-toggle{
     color: white;
-    width: 22px;
+    font-size: 22px;
     cursor: pointer;
     position: absolute;
-    left: 83%;
+    left: 86%;
   }
 
+
 .icon{
-    width: 30px;
-    image-rendering: pixelated;
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6));
+    font-size: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
     cursor: pointer;
-    transition: 0.3s ease;
-    border-radius: 20%;
+    color: white;
+    transition: 0.3s;
 }
 .icon:hover{
-  filter: drop-shadow(1px 1px 3px #1CDBFD);
+    color: #1CDBFD;
 }
 
 .nav-menu {
@@ -148,10 +132,12 @@ header ul li:hover{
   margin: 10px;
 }
 
+
 .menu-toggle {
   display: none;
-  width: 30px;
+  font-size: 24px;
   cursor: pointer;
+  color: white;
 }
 .menu-item {
     display: flex;
@@ -161,11 +147,6 @@ header ul li:hover{
 }
 .icon-label{
     display: none;
-    font-family: pixellari;
-    font-size: 17px;
-    cursor: pointer;
-    transition: 0.3s;
-
 }
 
 @media (max-width: 768px){
@@ -179,21 +160,21 @@ header ul li:hover{
   }
 
   header ul  a li {
-    font-size: 1rem;
+    font-size: 15px;
 }
   
   .title { 
     font-size: 1.2rem;
+    font-weight: bold;
     color: #1CDBFD;
-    left: 60%;
-    margin-bottom: 5px;
+    margin-left: 40px;
 }
   .nav-menu {
   position: absolute;
   top: 60px;
-  left: 74%;
+  left: 76%;
   background-color: #148AA1;
-  width: 24%;
+  width: 22%;
   gap: 15px;
   padding: 20px;
   z-index: 999;
@@ -222,15 +203,7 @@ header ul li:hover{
   }
   .menu-toggle {
     display: block;
-    margin-left:auto;
-    margin-right: -5px;
-    margin-bottom: 3px;
-  }
-  .icon:hover{
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6)); 
-  }
-  .icon-label:hover{
-    color: #1CDBFD;
+    margin-left: auto;
   }
 
   header {
@@ -252,11 +225,10 @@ header ul li:hover{
   .search-toggle{
     display: block;
     color: white;
-    width: 25px;
+    font-size: 22px;
     cursor: pointer;
     margin-right: 10px;
     margin-top: 5px;
-    left: 86%;
   }
 
   .mobile-search {

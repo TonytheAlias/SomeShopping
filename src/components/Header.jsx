@@ -1,10 +1,6 @@
 import "../css/header.css";
 import { useState } from "react";
-import Search from "../Images/search-white.svg";
-import HamburgerIcon from "../Images/hambugerPixel.svg";
-import ChestIcon from "../Images/Chest-pixel.svg";
-import Profile from "../Images/profile.svg";
-import Favorite from "../Images/RedPixelHeart-fill.svg";
+
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -35,12 +31,10 @@ function Header() {
               className="search-input desktop-search"
             />
           </div>
-          <img
-            src={Search}
-            alt="Search"
-            className="search-toggle"
+          <i
+            className="ri-search-line search-toggle"
             onClick={() => setSearchOpen(!searchOpen)}
-          />
+          ></i>
           <div className={searchOpen ? "mobile-search open" : "mobile-search"}>
             <input
               type="text"
@@ -51,19 +45,19 @@ function Header() {
 
           <div className={menuOpen ? "nav-menu open" : "nav-menu"}>
             <div className="menu-item">
-              <img src={Profile} className="icon" />
+              <i className="ri-user-3-line icon"></i>
               <span className="icon-label">
                 <strong>Profile</strong>
               </span>
             </div>
             <div className="menu-item">
-              <img src={Favorite} className="icon" />
+              <i className="ri-heart-3-line icon"></i>
               <span className="icon-label">
                 <strong>Favorites</strong>
               </span>
             </div>
             <div className="menu-item">
-              <img src={ChestIcon} className="icon" />
+              <i className="ri-shopping-cart-line icon"></i>
               <span className="icon-label">
                 <strong>Cart</strong>
               </span>
@@ -71,12 +65,10 @@ function Header() {
           </div>
         </div>
 
-        <img
-          src={HamburgerIcon}
-          alt="Menu"
-          className="menu-toggle"
+        <i
+          className="ri-align-justify menu-toggle"
           onClick={() => setMenuOpen(!menuOpen)}
-        />
+        ></i>
       </header>
     </div>
   );
