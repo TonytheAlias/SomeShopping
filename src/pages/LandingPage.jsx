@@ -39,19 +39,18 @@ function LandingPage() {
             <h2>Kids</h2>
           </div>
         </div>
+        <div className="box-section">
+          <div className="box box1">
+            <h6>#SomeShoppingRewards</h6>
+            <h2>The Benefits are Unfair</h2>
+            <p>Join US today and get 50% off selected products</p>
+            <button>Become a Member</button>
+          </div>
+          <div className="box box2">
+            <h5></h5>
+          </div>
+        </div>
       </section>
-      {/* <div className="box-section">
-        <div className="box1">
-          <h5>#SomeShoppingRewards</h5>
-          <h2>The Benefits are Unfair</h2>
-          <p>Join US today and get 50% off selected Products</p>
-          <button>Become a Member</button>
-        </div>
-        <div className="box2">
-          <h5></h5>
-        </div>
-
-      </div> */}
     </div>
   );
 }

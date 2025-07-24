@@ -105,6 +105,45 @@ section {
     background-position: center;
 }
 
+/* Sections */
+
+.box-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+.box{
+    width: 35rem;
+    height: 20rem;
+    border: 2px solid red;
+}
+
+.box1{
+    font-size: 25px;
+    background-color: #022B3A;
+    padding: 10px 15px;
+    line-height: 3rem;
+}
+.box1 button{
+    width: 10rem;
+    height: 2rem;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+    background-color:  #022B3A;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.box1 button:hover{
+    background-color: #FFFFFF;
+    color: #022B3A;
+}
+
+.box2 {
+    background-color: #017991;
+}
+
+
 /******************MOBILE VERSION******************/
 
 @media (max-width: 768px){
@@ -142,5 +181,16 @@ section {
     .kids{
         background-size: cover;
     }
+
+    .box-section{
+     flex-direction: column;
+     padding-left: 20px;
+    }
+
+    .box{
+        width: 25rem;
+        height: 20rem;
+    }
+
 
 }

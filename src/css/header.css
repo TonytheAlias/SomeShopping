@@ -147,6 +147,7 @@ header ul li:hover{
 }
 .icon-label{
     display: none;
+    cursor: pointer;
 }
 
 @media (max-width: 768px){
