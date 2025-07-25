@@ -1,8 +1,21 @@
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import headerImg from "../Images/Background-Header.jpg";
 import "../css/LandingPage.css";
+import { getFashionArticle } from "../services/api";
 
 function LandingPage() {
+  const [article, setArticle] = useState(null);
+
+  useEffect(() => {
+    const fetchArticle = async () => {
+      const fetchedArticle = await getFashionArticle();
+      setArticle(fetchedArticle);
+    };
+
+    fetchArticle();
+  }, []);
+
   return (
     <div className="container">
       {/* Header Section */}
@@ -47,7 +60,18 @@ function LandingPage() {
             <button>Become a Member</button>
           </div>
           <div className="box box2">
-            <h5></h5>
+            <h5>Stay Up to Date on the Latest Fashion News</h5>
+            {article ? (
+              <>
+                <a href={article.url} target="_blank" rel="noopener noreferrer">
+                  <h3>{article.title}</h3>
+                </a>
+                <p>{article.description}</p>
+                <small>{new Date(article.publishedAt).toLocaleString()}</small>
+              </>
+            ) : (
+              <p>Loading article...</p>
+            )}
           </div>
         </div>
       </section>
