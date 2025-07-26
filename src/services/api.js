@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const API_KEY = '606f409c02e646c3bab76dadb1e34be5';
-const URL = `https://newsapi.org/v2/everything?q=fashion&language=en&sortBy=publishedAt&pageSize=10&apiKey=${API_KEY}`;
+const URL = `https://newsapi.org/v2/everything?q=clothing%20OR%20apparel%20OR%20outfits%20OR%20runway%20OR%20wardrobe&language=en&sortBy=publishedAt&pageSize=10&apiKey=${API_KEY}`;
+
 
 export const getFashionArticle = async () => {
   const cachedArticle = JSON.parse(localStorage.getItem('fashionArticle'));

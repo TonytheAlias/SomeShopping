@@ -60,14 +60,16 @@ function LandingPage() {
             <button>Become a Member</button>
           </div>
           <div className="box box2">
-            <h5>Stay Up to Date on the Latest Fashion News</h5>
+            <h6>#FashionNews</h6>
+            <h2>Stay Up to Date on the Latest Fashion News</h2>
             {article ? (
               <>
+                <h3>{article.title}</h3>
+                <p className="article-description">{article.description}</p>
+                <br />
                 <a href={article.url} target="_blank" rel="noopener noreferrer">
-                  <h3>{article.title}</h3>
+                  <button>Stay Up To Date</button>
                 </a>
-                <p>{article.description}</p>
-                <small>{new Date(article.publishedAt).toLocaleString()}</small>
               </>
             ) : (
               <p>Loading article...</p>
